@@ -1,0 +1,38 @@
+.search-bar_form {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.search-bar form {
+  display: inline-block;
+  font-size: 25px;
+}
+
+.search-bar input {
+  font-family: 'Roboto Mono', monospace;
+  color: white;
+  border-radius: 5px;
+  background: grey;
+  border-color: black;
+}
+
+@media (max-width: 1300px) {
+  .search-bar_form {
+    width: fit-content;
+  }
+}
+
+@media (max-width: 600px) {
+  .search-bar_form {
+    margin-top: 2rem;
+  }
+  .search-bar form {
+    font-size: 18px;
+  }
+  .search-bar form,
+  input {
+    display: block;
+  }
+}
